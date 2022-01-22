@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+from django.contrib.auth.models import User
+from rest_framework import viewsets
+from osiris.models import UserSerializer
 
 
-def index(request):
-    return HttpResponse("Hello world.")
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

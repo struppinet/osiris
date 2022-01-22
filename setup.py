@@ -10,5 +10,12 @@ setup(
     author='omer',
     author_email='',
     description='',
-    install_requires=['django', 'django-environ', 'mysqlclient']
+    install_requires=[
+        'django',
+        'django-environ',
+        'django-filter',
+        'mysqlclient',
+        'djangorestframework',
+        'markdown',
+    ]
 )

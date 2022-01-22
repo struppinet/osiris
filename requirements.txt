@@ -12,6 +12,8 @@ django==4.0.1
     # via osiris (setup.py)
 django-environ==0.8.1
     # via osiris (setup.py)
+djangorestframework~=3.13.1
+    # via osiris (setup.py)
 mysqlclient==2.1.0
     # via osiris (setup.py)
 sqlparse==0.4.2
