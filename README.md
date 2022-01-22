@@ -1,2 +1,0 @@
-# osiris
-Post Mortem tool
