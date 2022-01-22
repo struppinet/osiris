@@ -5,3 +5,8 @@ from django.template import loader
 def index(request):
     template = loader.get_template('index.html')
     return HttpResponse(template.render(request=request))
+
+
+def detail(request, identifier):
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render(request=request))
