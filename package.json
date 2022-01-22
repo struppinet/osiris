@@ -1,0 +1,46 @@
+{
+  "name": "osiris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "prod": "vite build",
+    "predev": "printf \"dev\" > public/hot",
+    "preprod:dashboard": "printf \"prod\" > public/hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/struppinet/osiris.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/struppinet/osiris/issues"
+  },
+  "homepage": "https://github.com/struppinet/osiris#readme",
+  "devDependencies": {
+      "@iconify/json": "^1.1.431",
+      "@jambonn/vue-lazyload": "^1.0.9",
+      "@prettier/plugin-php": "^0.17.6",
+      "@tailwindcss/forms": "^0.4.0",
+      "@tailwindcss/line-clamp": "^0.3.0",
+      "@tailwindcss/typography": "^0.5.0",
+      "@vitejs/plugin-vue": "^2.0.0",
+      "autoprefixer": "^10.4.0",
+      "axios": "^0.24.0",
+      "lodash": "^4.17.19",
+      "mitt": "^3.0.0",
+      "postcss": "^8.4.5",
+      "postcss-import": "^14.0.2",
+      "prettier": "^2.5.1",
+      "swiper": "^7.2.0",
+      "tailwindcss": "^3.0.7",
+      "unplugin-icons": "^0.12.18",
+      "vite": "^2.7.2",
+      "vue": "^3.2.22",
+      "vue-loader": "^16.1.2",
+      "vue-router": "^4.0.12"
+    }
+}

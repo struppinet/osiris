@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Osiris Postmortem</title>
+
+        <meta name="theme-color" content="#fff">
+
+        <script>
+            var themeMode = null;
+            function modeChange(mode) {
+                themeMode = mode;
+                if(mode === 'dark') {
+                    document.documentElement.classList.add('dark')
+                    document.querySelector('meta[name="theme-color"]').setAttribute("content", '#18181b');
+                } else {
+                    document.documentElement.classList.remove('dark')
+                    document.querySelector('meta[name="theme-color"]').setAttribute("content", '#fff');
+                }
+            }
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                modeChange('dark');
+            } else {
+                modeChange('light');
+            }
+        </script>
+    </head>
+    <body class="font-sans antialiased">
+        <div id="app"></div>
+
+        <script type="module" src="http://localhost:3000/@vite/client"></script>
+        <script type="module" src="http://localhost:3000/resources/js/app.js"></script>
+    </body>
+</html>
