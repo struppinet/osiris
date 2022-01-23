@@ -17,5 +17,7 @@ setup(
         'mysqlclient',
         'djangorestframework',
         'markdown',
+        'channels',
+        'channels-redis',
     ]
 )

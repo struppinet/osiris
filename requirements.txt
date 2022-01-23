@@ -8,6 +8,10 @@ asgiref==3.4.1
     # via django
 backports.zoneinfo==0.2.1
     # via django
+channels==3.0.4
+    # via osiris (setup.py)
+channels-redis==3.3.1
+    # via osiris (setup.py)
 django==4.0.1
     # via osiris (setup.py)
 django-environ==0.8.1
