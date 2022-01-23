@@ -27,3 +27,8 @@ class PostMortemLogViewSet(viewsets.ModelViewSet):
     queryset = PostMortemLog.objects.all()
     serializer_class = PostMortemLogSerializer
     permission_classes = [permissions.IsAuthenticated]
+
+
+def detail(request, identifier):
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render(request=request))

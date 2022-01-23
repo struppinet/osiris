@@ -1,3 +1,3 @@
 <template>
-  hi
+  hi from detail page
 </template>
